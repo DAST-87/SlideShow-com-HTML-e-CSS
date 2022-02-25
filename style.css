@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f0f0f0;
+    width: 100vw;
+    height: 100vh;
+    
+}
+input{
+    display: none;
+}
+.bar-top{
+    background-image: linear-gradient(45deg, #8c1d8d, #b70cb1, #de9e15);
+    height: 8px;   
+}
+.logo{
+    
+    width: 680px;
+    position: absolute;
+    top: 23%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.icons ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    
+}
+.icons ul li{
+    padding-left: 10px;
+    font-size: 24px;
+}
+.icons ul li a:hover{
+    cursor: pointer;
+    color: #f0b515;
+}
+.logo img{
+width: 150px;
+height: auto;
+
+}
+.content-slide{
+    width: 680px;
+    height: 370px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 20px 20px 30px -30px ;
+    overflow: hidden;
+    border: solid 8px rgb(255, 255, 255);
+    
+
+}
+.slides{
+    width: 680px;
+    height: 380px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s;
+}
+.slide-1 img{
+    width: 680px;
+    height: auto;
+}
+.slide img{
+    width: 680px;
+    height: auto;
+}
+.navigation{
+    border-radius: 10px;
+    border: solid 1px rgba(255, 255, 255, 0.308);
+    width: 400px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 550px;
+    margin: 10px;
+    transform: translate(-50%);
+    background-color: rgba(255, 255, 255, 0.308);
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 10px -8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.nav-cont{
+    width: 20px;
+    height: 20px;
+    border: solid 2px whitesmoke;
+    border-radius: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+.nav-cont:hover{
+    background-color: aliceblue;
+}
+/* Navegação - CHECKED*/
+
+#slide2:checked ~ .slides{
+    left: -50%;
+}
+#slide3:checked ~ .slides{
+    left: -150%;
+}
+#slide4:checked ~ .slides{
+    left: -250%;
+}
+#slide5:checked ~ .slides{
+    left: -350%;
+}
+#slide6:checked ~ .slides{
+    left: -450%;
+}
