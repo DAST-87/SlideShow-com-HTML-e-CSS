@@ -19,7 +19,7 @@ input{
     
     width: 680px;
     position: absolute;
-    top: 23%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%);
     display: flex;
